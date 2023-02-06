@@ -10,7 +10,7 @@ Each version will be a different VexCode project.
 ## File structure:
 
 ```
-BlueAlliance:  
+Blue/RedAlliance:  
     include:  
         vex.h  
         robot-config.h  
