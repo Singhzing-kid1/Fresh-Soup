@@ -31,9 +31,12 @@ Config variables:
 
 Joystick sensitivity: controller-mapping.h/.cpp  
 drive train max Speed(max speed the drive train motors can go): drive-train.h/.cpp  
+intake max speed: file TBD  
+leftMotorGroup: drive-train.h/.cpp  
+rightMotorGroup: drive-train.h/.cpp  
+driveTrain: drive-train.h/.cpp
 
 Drive Train functions:
 
-forward/backward  
-point turn  
-swerve turn left/right  
+leftDriveMotorGroup: basically gets run when needed and speed is controlled by individual joysticks  
+rightDriveMotorGroup: ""  
