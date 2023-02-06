@@ -9,6 +9,7 @@ Each version will be a different VexCode project.
 
 ## File structure:
 
+```
 BlueAlliance:  
     include:  
         vex.h  
@@ -19,6 +20,7 @@ BlueAlliance:
         main.cpp  
         robot-config.cpp  
         controller-mapping.cpp  
-        autonomous.cpp  
+        autonomous.cpp
+```
 
 this is not final and this file structure will get updated as I add code
