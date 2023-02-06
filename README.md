@@ -29,11 +29,11 @@ Blue/RedAlliance:
 
 Config variables:
 
-Joystick sensitivity: controller-mapping.h/.cpp
-drive train max Speed(max speed the drive train motors can go): drive-train.h/.cpp
+Joystick sensitivity: controller-mapping.h/.cpp  
+drive train max Speed(max speed the drive train motors can go): drive-train.h/.cpp  
 
 Drive Train functions:
 
-forward/backward
-point turn
-swerve turn left/right
+forward/backward  
+point turn  
+swerve turn left/right  
