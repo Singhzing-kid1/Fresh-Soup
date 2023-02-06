@@ -15,12 +15,25 @@ Blue/RedAlliance:
         vex.h  
         robot-config.h  
         controller-mapping.h  
+        drive-train.h
         autonomous.h  
     src:  
         main.cpp  
         robot-config.cpp  
+        drive-train.cpp  
         controller-mapping.cpp  
         autonomous.cpp
 ```
 
-this is not final and this file structure will get updated as I add code
+*this is not final and this file structure will get updated as I add code*
+
+Config variables:
+
+Joystick sensitivity: controller-mapping.h/.cpp
+drive train max Speed(max speed the drive train motors can go): drive-train.h/.cpp
+
+Drive Train functions:
+
+forward/backward
+point turn
+swerve turn left/right
