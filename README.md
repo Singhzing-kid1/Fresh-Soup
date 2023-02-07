@@ -35,7 +35,7 @@ Config variables:
 
 |Variable|Descripition|Config File|Header File|
 |-------------|-------------|-------------|-------------|
-|sensitivity|soystick sensitivity|controller-mapping.cpp|controller-mapping.h|
+|sensitivity|joystick sensitivity|controller-mapping.cpp|controller-mapping.h|
 |drive train max speed|maximum speed that the drive train motors can go|drive-train.cpp|drive-train.h|
 |intake max speed|how fast the intake motos can go|TBD|TBD|
 |left motor group|group of motors|drive-train.cpp|drive-train.h|
