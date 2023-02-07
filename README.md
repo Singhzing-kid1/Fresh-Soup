@@ -1,6 +1,10 @@
 # Fresh-Soup
 Vexcode V5 Project.
 
+# Logbook
+
+[Click Me](https://singhzing-kid1.github.io/Fresh-Soup/)
+
 
 # Code planning:
 
