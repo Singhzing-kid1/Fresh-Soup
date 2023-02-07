@@ -38,7 +38,7 @@ Config variables:
 |right motor group|group of motors|drive-train.cpp|drive-train.h|
 |drive train|group of motors|drive-train.cpp|drive-train.h|
 
-Drive Train functions:
+Functions:
 
 |Function|Inputs|Type|Description|File|Header File|  
 |-------------|-------------|-------------|-------------|-------------|-------------|
