@@ -73,16 +73,16 @@ void usercontrol(void) {
   while (1) {
     // Drive start
 
-    axis2v = axisCheck(sensitivity, mainController.Axis2);
-    axis3v = axisCheck(sensitivity, mainController.Axis3);
+    axis2 = axisCheck(sensitivity, mainController.Axis2);
+    axis3 = axisCheck(sensitivity, mainController.Axis3);
 
-    if(axis2v){
+    if(axis2){
         rightDrive(speedCap(maxSpeed, mainController.Axis2.position()));
     } else {
         rightMotors.stop(coast);
     }
 
-    if(axis3v){
+    if(axis3){
         leftDrive(speedCap(maxSpeed, mainController.Axis3.position()));
     } else {
         leftMotors.stop(coast);
