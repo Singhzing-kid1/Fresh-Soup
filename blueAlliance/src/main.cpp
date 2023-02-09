@@ -67,8 +67,8 @@ void autonomous(void) {
 
 void usercontrol(void) {
   // User control code here, inside the loop
-  bool axis2v; // the v meaning variable considerint that there is a function named axis2 and axis3
-  bool axis3v;
+  bool axis2; // the v meaning variable considerint that there is a function named axis2 and axis3
+  bool axis3;
 
   while (1) {
     // Drive start
