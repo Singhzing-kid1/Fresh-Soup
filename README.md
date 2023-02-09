@@ -58,7 +58,7 @@ Blue/RedAlliance:
 |speed cap|int, double|double|takes an integer and a double, checks if the double is greater than the integer and if it is outputs the value of the ineteger, if not it ouputs the value of the double|robot-config.cpp|robot-config.h|
 |launcher motor movement|TBD|TBD|TBD|launcher.cpp|launcher.h|
 |intake motor movement|TBD|TBD|TBD|intake.cpp|intake.h|
-|check joystick axis 2|int, vex::contoller::axis|bool|checks the joystick axis 2 for movement|controller-mapping.cpp|controller-mapping.h|
+|check a given joystick axis|int, vex::contoller::axis|bool|checks any given joystick axis for movement|controller-mapping.cpp|controller-mapping.h|
 
 ### Motors:
 
