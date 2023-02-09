@@ -59,7 +59,6 @@ Blue/RedAlliance:
 |launcher motor movement|TBD|TBD|TBD|launcher.cpp|launcher.h|
 |intake motor movement|TBD|TBD|TBD|intake.cpp|intake.h|
 |check joystick axis 2|int, vex::contoller::axis|bool|checks the joystick axis 2 for movement|controller-mapping.cpp|controller-mapping.h|
-|check joystick axis 3|int, vex::controller::axis|bool|checks the joystick axis 3 for movement|controller-mapping.cpp|controller-mapping.h|
 
 ### Motors:
 
