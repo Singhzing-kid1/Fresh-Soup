@@ -11,6 +11,8 @@
 // ---- END VEXCODE CONFIGURED DEVICES ----
 
 #include "vex.h"
+#include "controller-mapping.h"
+#include "drive-train.h"
 
 using namespace vex;
 
@@ -65,15 +67,28 @@ void autonomous(void) {
 
 void usercontrol(void) {
   // User control code here, inside the loop
-  while (1) {
-    // This is the main execution loop for the user control program.
-    // Each time through the loop your program should update motor + servo
-    // values based on feedback from the joysticks.
+  bool axis2v; // the v meaning variable considerint that there is a function named axis2 and axis3
+  bool axis3v;
 
-    // ........................................................................
-    // Insert user code here. This is where you use the joystick values to
-    // update your motors, etc.
-    // ........................................................................
+  while (1) {
+    // Drive start
+
+    axis2v = axisCheck(sensitivity, mainController.Axis2);
+    axis3v = axisCheck(sensitivity, mainController.Axis3);
+
+    if(axis2v){
+        rightDrive(speedCap(maxSpeed, mainController.Axis2.position()));
+    } else {
+        rightMotors.stop(coast);
+    }
+
+    if(axis3v){
+        leftDrive(speedCap(maxSpeed, mainController.Axis3.position()));
+    } else {
+        leftMotors.stop(coast);
+    }
+
+    // Drive end
 
     wait(20, msec); // Sleep the task for a short amount of time to
                     // prevent wasted resources.

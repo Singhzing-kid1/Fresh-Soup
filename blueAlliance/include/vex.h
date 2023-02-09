@@ -1,3 +1,4 @@
+
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
 /*    Module:       vex.h                                                     */
@@ -6,7 +7,7 @@
 /*    Description:  Default header for V5 projects                            */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
-//
+
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,10 +18,11 @@
 
 #include "robot-config.h"
 
-#define waitUntil(condition)                                                   \
-  do {                                                                         \
-    wait(5, msec);                                                             \
+#define waitUntil(condition) \
+  do { \
+    wait(5, msec); \
   } while (!(condition))
 
-#define repeat(iterations)                                                     \
+#define repeat(iterations) \
   for (int iterator = 0; iterator < iterations; iterator++)
+
