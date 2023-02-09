@@ -5,6 +5,10 @@ Vexcode V5 Project.
 
 [Click Me](https://singhzing-kid1.github.io/Fresh-Soup/)
 
+# Wiki
+
+[Click Me](https://github.com/Singhzing-kid1/Fresh-Soup/wiki)
+
 
 # Code planning:
 
