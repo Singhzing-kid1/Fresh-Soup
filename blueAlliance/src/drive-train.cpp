@@ -18,7 +18,6 @@ motor motor6 = motor(PORT6, ratio6_1, true);
 
 motor_group leftMotors = motor_group(motor1, motor2, motor3);
 motor_group rightMotors = motor_group(motor4, motor5, motor6);
-motor_group driveTrain = motor_group(motor1, motor2, motor3, motor4, motor5, motor6);
 
 // functions
 
