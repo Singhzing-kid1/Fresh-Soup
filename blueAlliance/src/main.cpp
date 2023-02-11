@@ -78,12 +78,14 @@ void usercontrol(void) {
 
     if(axis2){
         rightDrive(speedCap(maxSpeed, mainController.Axis2.position()));
+        printf("axis 2 moved");
     } else {
         rightMotors.stop(coast);
     }
 
     if(axis3){
         leftDrive(speedCap(maxSpeed, mainController.Axis3.position()));
+        printf("axis 3 moved");
     } else {
         leftMotors.stop(coast);
     }
