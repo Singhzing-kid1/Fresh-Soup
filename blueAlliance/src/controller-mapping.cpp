@@ -16,7 +16,9 @@ controller mainController = controller(primary); // the main controller
 bool axisCheck(int threshold, controller::axis axis){
     if (axis.position() > threshold || axis.position() < -threshold){
         return true;
+        printf("Axis is %ld",  axis.position());
     } else {
         return false;
+        printf("Axis is %ld",  axis.position());
     }
 }

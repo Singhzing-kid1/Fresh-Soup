@@ -17,10 +17,13 @@ void vexcodeInit(void) {
 double speedCap(int cap, double value){
     if(value > cap){
         return cap;
+        printf("capped positive");
     } else if(value < -cap){
         return -cap;
+        printf("capped negative");
     } else {
         return value;
+        printf("not capped");
     }
 }
 
