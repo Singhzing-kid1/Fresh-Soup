@@ -16,9 +16,9 @@ int sensitivity = 100; // in percent (0-100) of the joystick output caps the out
 bool axisCheck(int threshold, controller::axis axis){
     if (axis.position() > threshold || axis.position() < -threshold){
         return true;
-        printf("Axis is %ld",  axis.position());
+        printf("Axis is %ld\n",  axis.position());
     } else {
         return false;
-        printf("Axis is %ld",  axis.position());
+        printf("Axis is %ld\n",  axis.position());
     }
 }

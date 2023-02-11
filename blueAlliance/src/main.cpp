@@ -72,24 +72,24 @@ void usercontrol(void) {
 
   while (1) {
     // Drive start
-    printf("check axises");
+    printf("check axises\n");
     axis2 = axisCheck(sensitivity, mainController.Axis2);
     axis3 = axisCheck(sensitivity, mainController.Axis3);
 
     if(axis2){
         rightDrive(speedCap(maxSpeed, mainController.Axis2.position()));
-        printf("axis 2 moved");
+        printf("axis 2 moved\n");
     } else {
         rightMotors.stop(coast);
-        printf("stop right motors");
+        printf("stop right motors\n");
     }
 
     if(axis3){
         leftDrive(speedCap(maxSpeed, mainController.Axis3.position()));
-        printf("axis 3 moved");
+        printf("axis 3 moved\n");
     } else {
         leftMotors.stop(coast);
-        printf("stop left motors");
+        printf("stop left motors\n");
     }
 
     // Drive end
@@ -104,7 +104,7 @@ void usercontrol(void) {
 //
 int main() {
   // Set up callbacks for autonomous and driver control periods.
-  printf("main");
+  printf("main\n"); // do not touch this it makes everything work for some reason
   Competition.autonomous(autonomous);
   Competition.drivercontrol(usercontrol);
 

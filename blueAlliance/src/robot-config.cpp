@@ -18,13 +18,13 @@ void vexcodeInit(void) {
 double speedCap(int cap, double value){
     if(value > cap){
         return cap;
-        printf("capped positive");
+        printf("capped positive\n");
     } else if(value < -cap){
         return -cap;
-        printf("capped negative");
+        printf("capped negative\n");
     } else {
         return value;
-        printf("not capped");
+        printf("not capped\n");
     }
 }
 
