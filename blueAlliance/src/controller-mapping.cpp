@@ -8,7 +8,7 @@
 using namespace vex;
 
 // variables
-int sensitivity = 100; // in percent (0-100) of the joystick output caps the output of the joystick
+int sensitivity = 5; // in percent (0-100) of the joystick output caps the output of the joystick
 // the main controller
 
 // functions
