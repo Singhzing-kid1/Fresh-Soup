@@ -14,7 +14,7 @@ void vexcodeInit(void) {
   // Nothing to initialize
 }
 
-double speedCap(int cap, double value){
+double valueCap(int cap, double value){
     if(value > cap){
         return cap;
     } else if(value < -cap){

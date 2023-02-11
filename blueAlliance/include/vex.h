@@ -19,6 +19,7 @@
 #include "robot-config.h"
 #include "controller-mapping.h"
 #include "drive-train.h"
+#include "intake.h"
 
 #define waitUntil(condition) \
   do { \

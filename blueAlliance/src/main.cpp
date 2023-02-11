@@ -67,8 +67,9 @@ void autonomous(void) {
 
 void usercontrol(void) {
   // User control code here, inside the loop
-  bool axis2; // the v meaning variable considerint that there is a function named axis2 and axis3
+  bool axis2;
   bool axis3;
+  bool buttonR1;
 
   while (1) {
     // Drive start
@@ -76,18 +77,29 @@ void usercontrol(void) {
     axis3 = axisCheck(sensitivity, mainController.Axis3);
 
     if(axis2){
-        rightDrive(speedCap(maxSpeed, mainController.Axis2.position()));
+        rightDrive(valueCap(maxSpeed, mainController.Axis2.position()));
     } else {
         rightMotors.stop(coast);
     }
 
     if(axis3){
-        leftDrive(speedCap(maxSpeed, mainController.Axis3.position()));
+        leftDrive(valueCap(maxSpeed, mainController.Axis3.position()));
     } else {
         leftMotors.stop(coast);
     }
 
     // Drive end
+
+    // Intake start
+    buttonR1 = buttonCheck(mainController.ButtonR1);
+
+    if(buttonR1){
+        intakeMotor.spin(forward, 100, percent);
+    } else {
+        intakeMotor.stop(brake);
+    }
+
+    // Intake end
 
     wait(20, msec); // Sleep the task for a short amount of time to
                     // prevent wasted resources.

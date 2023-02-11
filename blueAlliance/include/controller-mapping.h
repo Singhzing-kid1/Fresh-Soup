@@ -9,3 +9,4 @@ extern controller mainController;
 
 // functions
 bool axisCheck(int, controller::axis);
+bool buttonCheck(controller::button);

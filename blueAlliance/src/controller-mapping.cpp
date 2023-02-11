@@ -14,7 +14,15 @@ controller mainController = controller(primary); // the main controller
 // functions
 
 bool axisCheck(int threshold, controller::axis axis){
-    if (axis.position() >= threshold || axis.position() <= -threshold){
+    if (axis.position() > threshold || axis.position() < -threshold){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+bool buttonCheck(controller::button button){
+    if (button.pressing()){
         return true;
     } else {
         return false;

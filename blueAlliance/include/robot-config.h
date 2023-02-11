@@ -7,6 +7,6 @@ extern brain Brain;
  * This should be called at the start of your int main function.
  */
 void vexcodeInit(void);
-double speedCap(int, double);
+double valueCap(int, double);
 
 

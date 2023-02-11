@@ -59,19 +59,20 @@ Blue/RedAlliance:
 |-------------|-------------|-------------|-------------|-------------|-------------|
 |left drive motor movement|double|void|takes in an double and moves the left three motors|drive-train.cpp|drive-train.h|
 |right drive motor movement|double|void|takes in an double and moves the right three motors|drive-train.cpp|drive-train.h|
-|speed cap|int, double|double|takes an integer and a double, checks if the double is greater than the integer and if it is outputs the value of the ineteger, if not it ouputs the value of the double|robot-config.cpp|robot-config.h|
+|value cap|int, double|double|takes an integer and a double, checks if the double is greater than the integer and if it is outputs the ineteger, if not it ouputs the value of the double|robot-config.cpp|robot-config.h|
 |launcher motor movement|TBD|TBD|TBD|launcher.cpp|launcher.h|
-|intake motor movement|TBD|TBD|TBD|intake.cpp|intake.h|
 |check a given joystick axis|int, vex::contoller::axis|bool|checks any given joystick axis for movement|controller-mapping.cpp|controller-mapping.h|
+|check a given button|vex::controller::button|bool|checks a given button to see if it is pressed or not|controller-mapping.cpp|controller-mapping.h|
 
 ### Motors:
 
 |Motor #|Gearbox Ratio|Reverse|Port|What for|.cpp file|.h file|
 |----------|----------|----------|---------|----------|----------|----------|
-|1|6-1|false|1|Drive train|drive-train.cpp|drive-train.h|
-|2|6-1|false|2|Drive train|drive-train.cpp|drive-train.h|
-|3|6-1|false|3|Drive train|drive-train.cpp|drive-train.h|
-|4|6-1|true|4|Drive train|drive-train.cpp|drive-train.h|
-|5|6-1|true|5|Drive train|drive-train.cpp|drive-train.h|
-|6|6-1|true|6|Drive train|drive-train.cpp|drive-train.h|
+|1|18-1|false|1|Drive train|drive-train.cpp|drive-train.h|
+|2|18-1|false|2|Drive train|drive-train.cpp|drive-train.h|
+|3|18-1|false|3|Drive train|drive-train.cpp|drive-train.h|
+|4|18-1|true|4|Drive train|drive-train.cpp|drive-train.h|
+|5|18-1|true|5|Drive train|drive-train.cpp|drive-train.h|
+|6|18-1|true|6|Drive train|drive-train.cpp|drive-train.h|
+|8|6-1|TBD|TBD|roller and intake motor|intake.cpp|intake.h|
 
