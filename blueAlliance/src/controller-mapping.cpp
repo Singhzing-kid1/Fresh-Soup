@@ -9,12 +9,12 @@ using namespace vex;
 
 // variables
 int sensitivity = 5; // in percent (0-100) of the joystick output caps the output of the joystick
-// the main controller
+controller mainController = controller(primary); // the main controller
 
 // functions
 
 bool axisCheck(int threshold, controller::axis axis){
-    if (axis.position() > threshold || axis.position() < -threshold){
+    if (axis.position() >= threshold || axis.position() <= -threshold){
         return true;
     } else {
         return false;

@@ -5,7 +5,7 @@ using namespace vex;
 
 // variables
 extern int sensitivity;
-//extern controller mainController;
+extern controller mainController;
 
 // functions
 bool axisCheck(int, controller::axis);
