@@ -11,8 +11,8 @@
 // ---- END VEXCODE CONFIGURED DEVICES ----
 
 #include "vex.h"
-#include "controller-mapping.h"
-#include "drive-train.h"
+//#include "controller-mapping.h"
+//#include "drive-train.h"
 
 using namespace vex;
 

@@ -17,6 +17,8 @@
 #include "v5_vcs.h"
 
 #include "robot-config.h"
+#include "controller-mapping.h"
+#include "drive-train.h"
 
 #define waitUntil(condition) \
   do { \
