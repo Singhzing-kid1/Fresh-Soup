@@ -76,3 +76,16 @@ Blue/RedAlliance:
 |6|18-1|true|6|Drive train|drive-train.cpp|drive-train.h|
 |8|6-1|TBD|TBD|roller and intake motor|intake.cpp|intake.h|
 
+
+## Math behind the launcher function
+
+As we have gathered, a single flywheel must reach at least 4000 rpm to launch a vex SpinUp disc.
+
+This means that we need to speed our flywheel up before pushing things into it.
+
+some math for the code:
+
+4000 RPM ~ 67 RPS
+
+so over the course of a second, if the motor detects 67 or more rotations it pushes the disc into the fly wheel.
+
