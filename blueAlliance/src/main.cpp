@@ -72,7 +72,7 @@ void usercontrol(void) {
 
   while (1) {
     // Drive start
-
+    printf("check axises");
     axis2 = axisCheck(sensitivity, mainController.Axis2);
     axis3 = axisCheck(sensitivity, mainController.Axis3);
 
@@ -81,6 +81,7 @@ void usercontrol(void) {
         printf("axis 2 moved");
     } else {
         rightMotors.stop(coast);
+        printf("stop right motors");
     }
 
     if(axis3){
@@ -88,6 +89,7 @@ void usercontrol(void) {
         printf("axis 3 moved");
     } else {
         leftMotors.stop(coast);
+        printf("stop left motors");
     }
 
     // Drive end
