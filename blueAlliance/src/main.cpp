@@ -104,6 +104,7 @@ void usercontrol(void) {
 //
 int main() {
   // Set up callbacks for autonomous and driver control periods.
+  printf("main");
   Competition.autonomous(autonomous);
   Competition.drivercontrol(usercontrol);
 
