@@ -1,12 +1,18 @@
 #body {
-  font-family: 'Inconsolata', monospace;
-  text-align: center;
+    background-image: url('photos/SVG/background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Inconsolata', monospace;
+    color: #2b2d42;
+    text-align: center;
 }
 
 .logEntry {
     width: 60%;
     margin: 10px auto;
-    border: 2px solid #000000;
+    border: 2px solid #2b2d42;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -19,15 +25,41 @@
     margin: 10px auto;
 }
 
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.logEntry ul {
+    list-style-position: inside;
+    padding: 0;
+}
+
+.logEntry li {
+    padding-left: 10px;
+}
+
 .button {
-    border: 2px solid #000000;
+    border: 2px solid #2b2d42;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #ffb347;
     font-size: 1.5em;
     font-family: 'Inconsolata', monospace;
+    cursor: pointer;
 }
 
 button.button:hover {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #f5deb3;
+}
+
+.monthSelect{
+    border: 2px solid #2b2d42;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 1.5em;
+    font-family: 'Inconsolata', monospace;
+    width: 4%;
+    height: 3%;
 }

@@ -13,6 +13,7 @@
   <script type="text/javascript" id="MathJax-script" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   </head>
 <body id="body">
   <div>
@@ -20,7 +21,22 @@
     <h2> <a href="https://github.com/Singhzing-kid1/Fresh-Soup/wiki" target="_blank">Wiki</a> <a href="https://github.com/Singhzing-kid1/Fresh-Soup" target="_blank">Code</a></h2>
   </div>
   <div>
-      <button class="button all">Show All</button> <button class="button feb">February</button>
+      <select class="monthSelect">
+          <option value="all" selected >All</option>
+          <option value="jan">January</option>
+          <option value="feb">February</option>
+          <option value="mar">March</option>
+          <option value="apr">April</option>
+          <option value="may">May</option>
+          <option value="jun">June</option>
+          <option value="jul">July</option>
+          <option value="aug">August</option>
+          <option value="sep">September</option>
+          <option value="oct">October</option>
+          <option value="nov">November</option>
+          <option value="dec">December</option>
+      </select>
+
   </div>
   
   <div class="logEntry feb">
@@ -43,11 +59,11 @@
         mostly used a catapult for their launcher.
 
         Our current robot looks like this:
-
-        <img src="photos/image1Log1.jpg">
-        <img src="photos/image2Log1.jpg">
-        <img src="photos/image1Log2.jpg">
-  
+        <div class="images">
+            <img src="photos/image1Log1.jpg">
+            <img src="photos/image2Log1.jpg">
+            <img src="photos/image1Log2.jpg">
+        </div>
     </p>
   </div>
   <script type="text/javascript" src="index.js"></script>
