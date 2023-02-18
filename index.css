@@ -60,6 +60,6 @@ button.button:hover {
     background-color: transparent;
     font-size: 1.5em;
     font-family: 'Inconsolata', monospace;
-    width: 4%;
-    height: 3%;
+    width: 150px;
+    height: 50px;
 }
