@@ -1,9 +1,4 @@
 #body {
-    background-image: url('photos/SVG/background.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
     font-family: 'Inconsolata', monospace;
     color: #2b2d42;
     text-align: center;
