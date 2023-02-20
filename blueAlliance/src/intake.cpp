@@ -6,4 +6,4 @@
 using namespace vex;
 
 // variables
-motor intakeMotor = motor(PORT8, ratio6_1, false);
+motor intakeMotor = motor(PORT8, ratio6_1, true);

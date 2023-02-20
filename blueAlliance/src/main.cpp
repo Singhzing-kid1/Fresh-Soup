@@ -96,7 +96,7 @@ void usercontrol(void) {
     if(buttonR1){
         intakeMotor.spin(forward, 100, percent);
     } else {
-        intakeMotor.stop(brake);
+        intakeMotor.stop(coast);
     }
 
     // Intake end
