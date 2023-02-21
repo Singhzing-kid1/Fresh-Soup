@@ -8,6 +8,7 @@ on:
     paths:
       - '**.html'
       - '**.css'
+      - '**.js'
       - 'photos/**'
 
   # Allows you to run this workflow manually from the Actions tab
