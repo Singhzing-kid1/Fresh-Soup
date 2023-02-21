@@ -18,7 +18,7 @@ $(document).ready(function() {
     }
     
     function contract(){
-        $(this).css({height: '25%', width: '75%'});
+        $(this).css({height: '25%', width: '25%'});
     }
 
     $('.monthSelect').on('change', updateLogEntries);
