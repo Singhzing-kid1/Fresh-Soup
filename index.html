@@ -117,6 +117,116 @@
         </h6>The images above are not accurate to how the gears are arranged on the actual robot. They are just a representation of how the gears are connected to each other.</h6>
     </div>
     <div class="logEntry feb">
+        <h1> Date: 27-02-2023 | Log #: 3 | Contributer: Veer Singh & Aaron Lindemere & Carson </br> </h1>
+        <h2> Launcher Mechanism </h2>
+        <p> We have gone and created an abomination of nature and engineering. We made a launcher gear train where we have a 84 tooth gear meshing with a 12 tooth gear. This gear ratio happens twice.
+            Currently we are contemplating whether or not we should use the green 18:1 gear cartridge or the red 36:1 gear cartridge. 
+            </br>
+            Calulations for the green 18:1 gear cartridge(200 rpm):
+            $$ \text{let } x \text{ be the gear ratio of the launcher mechanism} $$
+            $$ x = \frac{84}{12} $$
+            $$ \text{let } y \text{ be the rpm of the intake mechanism} $$
+            $$ y = 200\text{ rpm }*x*x $$
+            $$ y = 200*\left(\frac{84}{12}\right)*\left(\frac{84}{12}\right) $$
+            $$ y = 200*7*7 $$
+            $$ y = 200*7^2 $$
+            $$ y = 200*49 $$
+            $$ y = 9800 \text{ rpm} $$
+            </br>
+            $$ \omega = \frac{y}{60 \text{ seconds/minute}}*2\pi \text{ rad\rev} $$
+            $$ \omega = \frac{\left(9800\right)}{60}*2\pi $$
+            $$ \omega = \frac{9800*2\pi}{60} $$
+            $$ \omega = \frac{9800*2*3.141592654}{60} $$
+            $$ \omega = \frac{9800*6.283185308}{60} $$
+            $$ \omega = \frac{61575.2160184}{60} $$
+            $$ \omega = 1026.25360031 \text{ rad/s} $$
+            </br>
+            $$ v = \omega r $$
+            $$ v = 1026.2536001* 2 \text{ in} $$
+            $$ v = 2052.50720062 \text{ in/s} $$
+            $$ v = 2052.50720062 \text{ in/s }*0.0254 \text{ m/s } $$
+            $$ v = 52.0000000006 \text{ m/s} $$
+            $$ v \approx 52 \text{ m/s} $$
+            </br>
+            Calculations for the red 36:1 gear cartridge(100 rpm):
+            $$ \text{let } x \text{ be the gear ratio of the launcher mechanism} $$
+            $$ x = \frac{84}{12} $$
+            $$ \text{let } y \text{ be the rpm of the intake mechanism} $$
+            $$ y = 100\text{ rpm }*x*x $$
+            $$ y = 100*\left(\frac{84}{12}\right)*\left(\frac{84}{12}\right) $$
+            $$ y = 100*7*7 $$
+            $$ y = 100*7^2 $$
+            $$ y = 100*49 $$
+            $$ y = 4900 \text{ rpm} $$
+            </br>
+            $$ \omega = \frac{y}{60 \text{ seconds/minute}}*2\pi \text{ rad\rev} $$
+            $$ \omega = \frac{\left(4900\right)}{60}*2\pi $$
+            $$ \omega = \frac{4900*2\pi}{60} $$
+            $$ \omega = \frac{4900*2*3.141592654}{60} $$
+            $$ \omega = \frac{4900*6.283185308}{60} $$
+            $$ \omega = \frac{30787.6080114}{60} $$
+            $$ \omega = 513.12680019 \text{ rad/s} $$
+            </br>
+            $$ v = \omega r $$
+            $$ v = 513.12680019* 2 \text{ in} $$
+            $$ v = 1026.25360038 \text{ in/s} $$
+            $$ v = 1026.25360038 \text{ in/s }*0.0254 \text{ m/s } $$
+            $$ v = 26.0000000009 \text{ m/s} $$
+            $$ v \approx 26 \text{ m/s} $$
+            </br>
+            Here we have the tangential velocities for the two different gear cartridges. However, there is an alternative that will push Vex to its limit.
+            The following calculations describe that alternative:
+            $$ \text{let } x \text{ be the gear ratio of the launcher mechanism} $$
+            $$ x = \frac{84}{12} $$
+            $$ \text{let } y \text{ be the rpm of the intake mechanism} $$
+            $$ y = 100\text{ rpm }*x*x*x $$
+            $$ y = 100*\left(\frac{84}{12}\right)*\left(\frac{84}{12}\right)*\left(\frac{84}{12}\right) $$
+            $$ y = 100*7*7*7 $$
+            $$ y = 100*7^3 $$
+            $$ y = 100*343 $$
+            $$ y = 34300 \text{ rpm} $$
+            </br>
+            $$ \omega = \frac{y}{60 \text{ seconds/minute}}*2\pi \text{ rad\rev} $$
+            $$ \omega = \frac{\left(34300\right)}{60}*2\pi $$
+            $$ \omega = \frac{34300*2\pi}{60} $$
+            $$ \omega = \frac{34300*2*3.141592654}{60} $$
+            $$ \omega = \frac{34300*6.283185308}{60} $$
+            $$ \omega = \frac{215387.212068}{60} $$
+            $$ \omega = 3589.78770011 \text{ rad/s} $$
+            </br>
+            $$ v = \omega r $$
+            $$ v = 3589.78770011* 2 \text{ in} $$
+            $$ v = 7179.57540022 \text{ in/s} $$
+            $$ v = 7179.57540022 \text{ in/s }*0.0254 \text{ m/s } $$
+            $$ v = 182.000000005 \text{ m/s} $$
+            $$ v \approx 182 \text{ m/s} $$
+            </br>
+            $$ \text{convert m/s to km/h} $$
+            $$ v = 182 \text{ m/s }*3.6 $$
+            $$ v = 182*3.6 $$
+            $$ v = 652.8 \text{ km/h} $$
+            $$ v \approx 653 \text{ km/h} $$
+            </br>
+            $$ \text{convert km/h to mach} $$
+            $$ v = 653 \text{ km/h} * \frac{0.00083844787 \text{mach}}{1 \text{km/h}} $$
+            $$ v = 653*0.00083844787 $$
+            $$ v = 0.54799999999 \text{ mach} $$
+            $$ v \approx 0.548 \text{ mach} $$
+            </br>
+            In other words this alternative goes 3 times faster than what vex is rated for. This system may have drawbacks such as:
+            <ul>
+                <li>It may cause long lasting and  detrimental effects on the motors</li> 
+                <li>It may cause the gears to break</li>
+                <li>It may cause the robot to break</li>
+                <li>It may cause the robot to explode(certain parts of the robot at least)</li>
+                <li>It can cause the robot to drain its battery way to quickly</li>
+            </ul>
+            For the system described by the calculations above see figure 2.a. To see the alternative system see figure 2.b.
+            <h2>Intake System</h2>
+
+
+
+        </p>
     </div>
 
     <script type="text/javascript" src="index.js"></script>
