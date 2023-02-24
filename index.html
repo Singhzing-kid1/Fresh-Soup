@@ -17,6 +17,11 @@
     <script src="https://kit.fontawesome.com/439ae60504.js" crossorigin="anonymous"></script>
 </head>
 <body id="body">
+    <div class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img">
+        <div id="caption"></div>
+    </div>
     <div>
         <h1>3300 H "Soup" Logbook</h1>
         <h2> <a href="https://github.com/Singhzing-kid1/Fresh-Soup/wiki" target="_blank">Wiki</a> <a href="https://github.com/Singhzing-kid1/Fresh-Soup" target="_blank">Code</a></h2>
@@ -41,7 +46,7 @@
     </div>
   
     <div class="logEntry feb">
-        <h1> Date: 09-02-2023 | Log #: 1 | Contributer: Veer Singh </br> </h1>
+        <h1> Date: 09-02-2023 | Log #: 1 | Contributer: Veer Singh & Aaron Lindenmere </br> </h1>
         <p> We have decided to completely redesign our entire robot. We have come to this decision due to our utter failure at the Mecha Mayhem Signature event in Calgary, AB.
             Here is a list of failure with our previous robot:
             <ul>
@@ -68,7 +73,7 @@
         </p>
     </div>
     <div class="logEntry feb">
-        <h1> Date: 20-02-2023 | Log #: 2 | Contributer: Veer Singh </br> </h1>
+        <h1> Date: 20-02-2023 | Log #: 2 | Contributer: Veer Singh & Aaron Lindenmere </br> </h1>
         <p> As new ideas and opportunities appear, we have been able to gain access to flex wheels which will help us in creating a more compact, flywheel launcher. A summary of changes we made in the past week-ish include:
         <ul>
             <li>Changed the drive train gear cartridges from the blue 6:1 to the green 18:1. We did this because the robot was hard to control in a confined space with the blue gear cartridges</li>
@@ -78,41 +83,41 @@
 
         <h2>Some More Important Stuff</h2>
         Gear ratios for the intake and rollers are as follows:</br>
-            The intake and roller motor has a blue 6:1 gear cartridge. This spins at 600 rpm.
-
+            The intake and roller motor has a green 18:1 gear cartridge. This spins at 200
             $$ \text{gear ratio} = \frac{\text{# of teeth on input gear}}{\text{# of teeth on output gear}} $$
             $$ \text{let } x \text{ be the roller gear ratio} $$
             $$ x = \frac{16}{24} $$
             $$ \text{output rpm} = \text{input rpm}*\text{gear ratio} $$
             $$ \text{let } y \text{ be the rpm of the roller mechanism } $$
-            $$ y = 600\text{ rpm}*x $$
-            $$ y = 600*\left(\frac{16}{24}\right) $$
-            $$ y = 600*\frac{16}{24} $$
-            $$ y = \frac{\left(600*16\right)}{24} $$
-            $$ y = \frac{9600}{24} $$
-            $$ y = 400 \text{ rpm} $$
+            $$ y = 200\text{ rpm}*x $$
+            $$ y = 200*\left(\frac{16}{24}\right) $$
+            $$ y = 200*\frac{16}{24} $$
+            $$ y = \frac{\left(200*16\right)}{24} $$
+            $$ y = \frac{3200}{24} \text{ rpm}$$
 
-            As we can see, the rpm of the roller mechanism is reduced from 600 rpm to 400 rpm using a sprocket system(see figure 1.a)
+            As we can see, the rpm of the roller mechanism is reduced from 200 rpm to ~133 rpm using a gear system(see figure 1.a).
             
             $$ \text{let } z \text{ be the gear ratio of the input mechanism} $$
             $$ z = \frac{84}{60} $$
             $$ \text{let } w \text{ be the rpm of the intake mechanism} $$
-            $$ w = 600\text{ rpm}*z $$
-            $$ w = 600*\left(\frac{84}{60}\right) $$
-            $$ w = 600*\frac{84}{60} $$
-            $$ w = \frac{\left(600*84\right)}{60} $$
-            $$ w = \frac{50400}{60} $$
-            $$ w = 840 \text{ rpm} $$
+            $$ w = 200\text{ rpm}*z $$
+            $$ w = 200*\left(\frac{84}{60}\right) $$
+            $$ w = 200*\frac{84}{60} $$
+            $$ w = \frac{\left(200*84\right)}{60} $$
+            $$ w = \frac{16800}{60} $$
+            $$ w = 280 \text{ rpm} $$
 
-            According to the above calculations, rpm increased from 600 rpm to 840 rpm using a gear system(see figure 1.b)
+            According to the above calculations, rpm increased from 200 rpm to 280 rpm using a gear system(see figure 1.b)
 
         <div class="images">
-            <img src="photos/1.a.png">
-            <img src="photos/1.b.png">
+            <img src="photos/1.a.png" alt="figure 1.a">
+            <img src="photos/1.b.png" alt="figure 1.b">
         </div>
 
         </h6>The images above are not accurate to how the gears are arranged on the actual robot. They are just a representation of how the gears are connected to each other.</h6>
-
+    </div>
+    <div class="logEntry feb">
+    </div>
 
     <script type="text/javascript" src="index.js"></script>
 </body>

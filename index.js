@@ -12,17 +12,22 @@ $(document).ready(function() {
                 break;
         }
     }
-    
-    function expand() {
-        $(this).css({height: '75%', width: '75%'});
+
+    function openModal() {
+        $('.modal').show();
+        $('.modal img').attr('src', $(this).attr('src'));
+        $('.modal #caption').text($(this).attr('alt'));
     }
-    
-    function contract(){
-        $(this).css({height: '25%', width: '25%'});
+
+    function closeModal() {
+        $('.modal').hide();
+        $('modal img').attr('src', '');
+        $('.modal #caption').text('');
     }
 
     $('.monthSelect').on('change', updateLogEntries);
-    $('.logEntry img').hover(expand, contract);
+    $('.images img').on('click', openModal);
+    $('.modal').on('click', closeModal);
 
     updateLogEntries();
 });
